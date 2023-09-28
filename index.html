@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minesweeper</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+        <div class="game-head">
+            <h1>Mines: <span id="mines-numbers" >0</span></h1>
+            <div id="timer">60</div>
+        </div>
+    
+        <div id="game-board">
+
+        </div>
+    
+        <div id="btn-flag">
+            <button ><img src="images/flag.png"></button>
+        </div>
+    
+     <button class="btn-retryGame">Replay Game</button>
+
+
+     <audio id="clickAudio" src="sounds/cellCLick.wav"></audio>
+     <audio id="MineAudio" src="sounds/Bomb.wav"></audio>
+     <audio id="timesout" src="sounds/timesout.wav"></audio>
+
+    <script src="main.js"></script>
+</body>
+</html>

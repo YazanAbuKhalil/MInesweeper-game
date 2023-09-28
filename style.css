@@ -1,0 +1,142 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("images/bomb.png")
+    ;
+    background-repeat: no-repeat;
+    background-size: 400px 500px;
+    background-position: left center;
+    
+}
+
+.game-head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20PX;
+    width: 400px;
+}
+
+
+.game-conainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+h1 {
+    width: 150px;
+}
+
+#timer {
+    color: red;
+    font-size: 40px;
+    background-color: antiquewhite;
+
+}
+
+#mines-numbers {
+    border: 0.5px solid black;
+    padding: 4PX;
+}
+
+#game-board {
+    max-width: 400px;
+    max-height: 400px;
+    background-color: #4D2DB7;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    
+}
+
+#game-board div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(231, 240, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 1s;
+    padding: 5px;
+}
+
+#game-board div:hover {
+    transform: scale(1.2);
+}
+
+.txt1 {
+    color: blue;
+}
+
+.txt2 {
+    color: green;
+}
+
+.txt3 {
+    color: red;
+}
+
+.txt4 {
+    color: navy;
+}
+
+.txt5 {
+    color: brown;
+}
+
+.txt6 {
+    color: teal;
+}
+
+.txt7 {
+    color: black;
+}
+
+.txt8 {
+    color: gray;
+}
+
+#btn-flag {
+    background-color:white;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#btn-flag img {
+    width: 40px;
+    height: 40;
+    cursor: pointer;
+}
+
+.flib {
+    transform: rotate3d(270deg)
+}
+
+.cell-clicked {
+    background-color: #EC53B0;
+}
+
+.btn-retryGame {
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    background-color: rgb(120, 107, 133);
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
